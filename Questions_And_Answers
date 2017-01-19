@@ -1,0 +1,48 @@
+# HTML5 Question
+# Microsoft WebMatrix #komodo [Editor]
+# Topic: https://code.tutsplus.com/tutorials/15-wonderfully-creative-uses-for-php--net-4714
+
+.Which features should you look for in an HTML5 editor
+  Fiel Management, Color Hinting, Code Collapsing
+  
+.Navigation element in HTML5
+  <nav></nav>
+  
+.Which items in the code excerpt below are parameters for the `mailto:` link
+  subject and ccor bcc 
+  
+.What is the best web site to validate your HTML5 syntax
+  validate.w3.org/check
+  
+.Identify the DOCTYPE declaration that should be used with HTML5 documents
+  <!DOCTYPE html>
+  
+.HTML5 special char sysmobles
+  https://dev.w3.org/html5/html-author/charref
+  
+.Creating list in HTML5
+<ul> <li> ... </li> </ul> [unorder list][items comes with dot/bullet `.`]
+<ol> <li> ... </li> </ol> [order list] [items comes with number `1,2...`]
+<dl> <dt> ... </dt> <dd> .... </dd> </dl> [Description list][they come like hierarchy or category][dd::describ the term/description & dt:define the term]
+In order list, 
+1.if you call the `type attribute` then it will change the numaric value accordingly. For example
+<ol type="A">
+  <li>Ram</li>
+  <li>Ashok</li>
+  <li>Shyam</li>
+ </ol>
+ Output:
+ A.Ram
+ B.Ashok
+ C.Shyam
+ So instead of 1,2... it display as A,B ...
+2.If you use `start attribute` then you can start your list with specific number. For example
+<ol statr=50> .... </ol>
+Output:
+50.Ram ....
+
+.Clickable `hotspots` in HTML5
+It is one another property of HTML5 to highlighted the area, where your can create `click or any other events`. So for this we use `map tag. For example
+<map name="map">
+  <area shape="rect/circle/poly" coords="15,9364,94" href="<address>">
+</map>
