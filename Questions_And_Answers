@@ -46,3 +46,68 @@ It is one another property of HTML5 to highlighted the area, where your can crea
 <map name="map">
   <area shape="rect/circle/poly" coords="15,9364,94" href="<address>">
 </map>
+
+-- HTML5 Semantic markup tag [20012017]
+
+.artical
+.section [Is just the way to separating or isolating the bolg or artical in different boxes ]
+.aside
+.address
+.cite
+.Header
+.Footer
+.Details
+.Summary
+.Figure
+  .Figcaption
+.Nav
+
+.video [properties: id, width, height, controls [add the video controls like play, pause etc]]
+  .source [properties: src, type][IMP feature for HTML 5 video tag is that it will make compatable the video as per the browser. Even it will also give the ability that if not support then not chok the site.
+
+.object [properties: data[to specified the file *.swf], type[application/x-shockwave-flash][MIME type], width, height]
+.embed [properties: src[to specified the file *.swf], type[application/x-shockwave-flash], width, height]
+
+--- CSS3
+border-radius [css property will give the ability to make it round shape of box]
+
+--- HTML 5 form tags to provide the validation & new features
+If the input type number then you use the property of input tag `type=number [controler]` 
+Making slider in HTML 5, developer can use in the input tag `type=range [range slider]`
+Color chooser / color picker in HTML 5
+: input tag has type="color"
+Calendar
+: input tag has type="date" [get only date]
+: input tag has type="dateTime" [get date & time]
+Required & Placeholder
+: if you need to validate the text field or else then you can use the `required="required"` attribute.
+: To display the major information, need to display be the user.
+AutoComplete Attribute
+: It can be truned off entire form and this is the part of form tag
+: individual form fields can have anutocomplete attribute turned on or off
+autocomplete = "off/no" [IE -11 can't support it, you can manually go to setting and turn on the autocomplete feature]
+
+Pattern Attribute
+: Validate the email address mechanisum using pattern tag in HTML 5.
+
+Datelist
+It will be appear when you use the input tag with `list` attribute. For example
+   <input list="cars" name="car">
+However, `datalist` tag open with multiple `option` tage. For example
+   <datalist id="cars">
+      <option values="audi">
+`Option` tag doesn't have closing tag.
+
+Novalidate [this attribute can be use in form tag without any value and turn off the all valiadtion use by form]
+
+Autofocus attribute
+New feature of HTML 5 to higlited the specific field after page load.
+<input type="text" name="" autofocus>
+
+Form attribute
+If you need some info must go with the different form then this feature will help in place. While you submit the form with this info, it will go for server.
+email: <input type="text" name="email" form="<name-of-form>">
+
+FormAction Attribute
+It gives the ability to override the main form action with other submit button actions.
+<input type="submit" name="xyz" formaction="<new-page-name>" value="new-xyz">
