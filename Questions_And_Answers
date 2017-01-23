@@ -45,6 +45,7 @@ Output:
 It is one another property of HTML5 to highlighted the area, where your can create `click or any other events`. So for this we use `map tag. For example
 <map name="map">
   <area shape="rect/circle/poly" coords="15,9364,94" href="<address>">
+
 </map>
 
 -- HTML5 Semantic markup tag [20012017]
@@ -111,3 +112,28 @@ email: <input type="text" name="email" form="<name-of-form>">
 FormAction Attribute
 It gives the ability to override the main form action with other submit button actions.
 <input type="submit" name="xyz" formaction="<new-page-name>" value="new-xyz">
+
+>document.body.style.background
+>document.body.style.backgroundImage
+> parent.location = <URL>
+> Window.open('<URL>') //it is open the second tab [Same thing _blank]
+>retunr <function_name>(this);
+>element.value
+>removeChild [<div_name>.parentNode.removeChild(<div_var>); [ to remove the any kind of input or block]
+>appandChile [<div_name>.body.appendChild(div_var); [It will revert or again disply the div]
+>javascript:<function_name()>
+><var_name>.reoveChild(remove.childNodes[0]) //to remove the indexed child
+if you wan create an element in webpage then you use `document.createElement("<ele_name>");
+if you want to change style or anything else for perticular tag then you can use `getElementsByTagName`
+if you need to fill dynamically the `createElement` then use `document.createTextNode(<pass_var_name>);
+For Example:
+ var newnode = document.createElement("<ele_name");//create dynamic element
+ var textnode = document.createTextNode("var_name");//to fill the created dynamic element value
+newnode.appenChild(textnode); //continue append the up coming values
+document.getELementById("<div_id>").appendChild(newnode);//to append the full child value into the variable
+
+
+
+
+
+
