@@ -132,7 +132,26 @@ For Example:
 newnode.appenChild(textnode); //continue append the up coming values
 document.getELementById("<div_id>").appendChild(newnode);//to append the full child value into the variable
 
+docuemnt.getElementById("<tag_id>").property_of_tag
+document.getElelmentsByClassName("<class_name>"); [it is return the array]
+You want to ass list element to an unorder list with the id.
+> document.createTextNode("<field_name>");
 
+--File selector & upload image
+> event.target.files[0];
+var readFile = new FileReader(); //HTML 5 File reader api
+image.title = event.target.files[0].name;
+.src = event.target.result();
+
+-- HTML5 & CSS3
+You have an HTML table with 11 rows and you want every second row to be colored after the first row, which is the table header.
+tr:nth-child(odd){ /*even or odd*/
+ background-color: #c9ef2c;
+}
+Using CSS, if you want to change default `li` formate then you need the below property
+list-style-type: square;
+If you want to change the position of your `UL`
+list-style-position: inside;
 
 
 
