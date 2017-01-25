@@ -154,6 +154,65 @@ list-style-type: square;
 If you want to change the position of your `UL`
 list-style-position: inside;
 
+Manipulated the Div
+Access to class or id with declare in child, we used or overridden the parent div
+> div.<class_name> or div#<id_name>
+Access the child element inside parent
+> div > <child_element>
+list-style-img: url() //if you need to overidde the bullets
+
+Visit & un-visit link
+> text-declaration: none // it will remove the underline from link
+If you want to change the unorder-list item properties then you must use the below action
+nav ul ul { ...} //so it will change the properties of one level down and master will become same
+...nav ul ul ul { ... } same for li as well.
+
+Overriding css
+
+Responsiv web design
+Three major component for RWD
+1. Flexible Grids
+2. Flexible Media (image etc)
+3. Media Queries (CSS based on framwork)
+
+Fluid Layout
+FlexBox:
+1.it will shift the one another
+2.shrink to the tags
+> display: flex;
+> display: -webkit-flex;
+
+> -webkit-flex: initial;
+> flex: initial // it will show that our initial div size will be fixed
+> min-width // if you shrink the screen, it will not shrink given `min-width` value
+
+Measurement for RWD
+1.Persentage [it is relative to the resolution always]
+2.em
+3.rem
+4.viewpoert unit (vw/ vh/ vmin/ vmax)
+> Flexible Images
+  img {
+    max-width:100%
+    height: auto !important /*it will set the ratio as per bowser window*/
+  }
+/*Flexibal background image:: It will make your backgeround image fix in your browser dashboard*/
+background-position: center
+background-attached: fixed;
+background-size: cover/contain;
+
+/*Overflow property:: */
+overflow: scroll;
+/*Sprites means; image contain the multiple images. */
+.sprite{
+ width:25%;
+ padding-bottom: 25%;
+ background-image: url(<image_name>);
+ background-position: 0% 0% /*really imp, it set the x & y value and which portion will be display*/
+ background-size: 200%
+}
+
+
 
 
 
