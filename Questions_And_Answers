@@ -212,6 +212,72 @@ overflow: scroll;
  background-size: 200%
 }
 
+It is the tag in HTML5 & CSS [svg - graphics]
+stroke
+stroke-width
+fill
+<svg></svg>
+ <line x1="", y1="", x2="", y2="" />
+ <rect x="", y="" />
+
+HTML5 Canvas
+<canvas></canvas>
+var context = canvas.getContext("2d") //create the 2-dimantion field
+context.fillStyle = "green"; //fill the color in canvas
+another properties are
+canvas.width & canvas.height
+context.fillRect(x, y, w, h)
+
+HTML5 Picture Elelemt
+<picture></picture> //allow multiple images, loaded the different size of pic
+<picture>
+  <source media="(min-width: 1024px)" srcset="<pic_name>">
+</picture>
+
+HTML5 Flexible Video
+<video controls></video>
+<video controls>
+  <source src="" type="video/mp4">
+</video>
+
+You are changing the number of columns display in the browser using CSS3 columns property
+-webkit-columns: 3;
+
+Media Queries
+Rule
+  @media screen{....}
+  @media print{....}
+  span: after{ ... } //allow us to put default content
+  Ex. span: after {
+        content: "<any_text>";
+      }
+Type
+  all [all media type of devices]
+  aural []
+  embossed []
+  handheld []
+  print []
+  projection []
+  screen []
+  tv []
+breakpoints
+  major
+  minor
+Syntax::
+@media (){ ..indside put the style of tags.. }
+Ex.@media (Orientation: landscape) { 
+  body{ .... } //this body style properties will applicable once passing argument in @media has sutisfied
+}
+
+[screen resolution]
+@media only screen and (min-device-width:320px) and (max-device-width: 480px){
+  body{ .... }
+}
+[viewport in meta tag]
+<meta name="viewport" content="width = device-height, inital-scale=1">
+@-ms-viewport {
+  width: device-width;
+}
 
 
 
